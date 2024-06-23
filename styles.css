@@ -1,0 +1,152 @@
+[data-tab-content] {
+    display: none;
+  }
+
+  .active[data-tab-content]
+   {
+    display: block;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #098b54;
+    color: black;
+    font-family: "raleway-bold";
+  }
+
+  @font-face {
+    font-family: raleway-bold;
+    src: url(fonts/raleway.bold.ttf);
+    }
+  
+  .tabs {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    background-color: #018060;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+    width: calc(100% / 4);
+    border: 1px solid #d4af37;
+
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12);
+  }
+  
+  .tab.active {
+    background-color: #003e21;
+  }
+  
+  .tab:hover {
+    background-color: #003e21;
+  }
+  
+  .tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    justify-content: center;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12);
+    font-size: 1em;
+  }
+
+  .tab-content h1{
+    text-align: center;
+    color: #018060;
+    text-shadow: 1.5px 1.5px 1.5px #d4af37;
+  }
+
+  .tab-content h2 {
+    text-align: center;
+    color: #018060;
+    text-shadow: 1px 1px 1px #d4af37;
+  }
+
+  .lawn-mower-1 {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .tabs_bar {
+    position: sticky;
+    max-width: 100%;
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .Main_Header {
+    text-align: center;
+    margin-bottom: 0px;
+    position: relative;
+    height: 175px;
+    background-color: #098b54;
+  }
+
+  .Header_Grass {
+    opacity: 1;
+    width: 100%;
+    max-height: 175px;
+  }
+
+ .center {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 2px 2px 4px #003e21;
+  }
+  
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: [first] 50% [second] 50%;
+    color: black;
+    grid-column-start: 1;
+    position: relative;
+    justify-self: center;
+  }
+
+.grid-content {
+    justify-self: center;
+    width: calc(100% - 20px);
+}
+
+.ContactButton {
+  width: 50%;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #d4af37;
+  background-color: #018060;
+  font-size: 1.5em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.12);
+  display: flex;
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .gridcontainer{
+        grid-template-columns: [first] 100%;
+    }
+}
